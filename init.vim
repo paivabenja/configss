@@ -7,11 +7,14 @@
 "
 
 call plug#begin()
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox',
 Plug 'itchyny/lightline.vim',
 Plug 'shinchu/lightline-gruvbox.vim',
 Plug 'preservim/nerdtree',
+Plug 'scrooloose/nerdcommenter',
+
 call plug#end()
 
 set shiftwidth=4
@@ -36,3 +39,6 @@ colorscheme gruvbox
 source ~/.config/nvim/coc-config.nvim
 
 map <Leader>f :NERDTreeToggle<CR>
+map <Leader>w :w<CR>
+map <Leader>q :q<CR>
+map <Leader>wq :wq<CR>

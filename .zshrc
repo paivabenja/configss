@@ -10,6 +10,7 @@
 alias v="nvim"
 alias l="exa -lah"
 alias cat="bat"
+alias ls="exa"
 
 #PLUGINS
 source ~/.zsh/plugins/sudo.zsh
