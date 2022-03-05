@@ -1,11 +1,10 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# ZSH PAIVA
+#         _                            _            
+# _______| |__  _ __ ___   _ __   __ _(_)_   ____ _ 
+#|_  / __| '_ \| '__/ __| | '_ \ / _` | \ \ / / _` |
+# / /\__ \ | | | | | (__  | |_) | (_| | |\ V / (_| |
+#/___|___/_| |_|_|  \___| | .__/ \__,_|_| \_/ \__,_|
+#                         |_|                       
+#                         
 
 #ALIAS
 alias v="nvim"
@@ -17,6 +16,5 @@ source ~/.zsh/plugins/sudo.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#odio p10k
