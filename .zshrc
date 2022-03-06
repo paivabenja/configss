@@ -14,8 +14,4 @@ alias ls="exa"
 
 #PLUGINS
 source ~/.zsh/plugins/sudo.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# powerlevel10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
