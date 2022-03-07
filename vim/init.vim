@@ -31,6 +31,8 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'onedark'
 colorscheme onedark
 let g:onedark_termcolors=16
+let g:onedark_terminal_italics=1
+let g:onedark_terminal_bolds=1
 
 "    UTILS
 set shiftwidth=4
