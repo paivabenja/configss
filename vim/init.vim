@@ -12,6 +12,8 @@ Plug 'itchyny/lightline.vim',
 Plug 'joshdick/onedark.vim',
 Plug 'preservim/nerdtree',
 Plug 'scrooloose/nerdcommenter',
+Plug 'sheerun/vim-polyglot',
+Plug 'ryanoasis/vim-devicons',
 
 call plug#end()
 
