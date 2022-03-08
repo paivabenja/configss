@@ -9,11 +9,12 @@ call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim',
-Plug 'joshdick/onedark.vim',
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'preservim/nerdtree',
 Plug 'scrooloose/nerdcommenter',
 Plug 'sheerun/vim-polyglot',
 Plug 'ryanoasis/vim-devicons',
+Plug 'turbio/bracey.vim',
 
 call plug#end()
 
@@ -28,8 +29,8 @@ set number relativenumber
 set numberwidth=5
 set noshowmode
 let g:lightline = {}
-let g:lightline.colorscheme = 'onedark'
-colorscheme onedark
+let g:lightline.colorscheme = 'tokyonight'
+colorscheme tokyonight
 let g:onedark_termcolors=16
 let g:onedark_terminal_italics=1
 let g:onedark_terminal_bolds=1
@@ -50,6 +51,7 @@ map <Leader>f :NERDTreeToggle<CR>
 map <Leader>w :w<CR>
 map <Leader>q :q<CR>
 map <Leader>e :wq<CR>
+map <Leader>ñ :Bracey<CR>
 
 "    24-BIT COLOR SUPPORT FOR VIM (ONEDARK)
 if (empty($TMUX))
