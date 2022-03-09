@@ -45,7 +45,6 @@ set clipboard=unnamedplus
 set mouse=a
 
 "    KEYBINDINGS
-
 let mapleader=" "
 map <Leader>f :NERDTreeToggle<CR>
 map <Leader>w :w<CR>
