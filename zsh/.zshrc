@@ -7,7 +7,7 @@
 
 
 #    THEME
-ZSH_THEME="aussiegeek" # set by `omz`
+ZSH_THEME="obraun" # set by `omz`
 
 #    UPDATES
 zstyle ':omz:update' mode reminder
@@ -28,7 +28,6 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 #   ALIASES
 alias v="nvim"
-alias l="exa -lah"
+alias l="exa --icons --grid -a"
 alias cat="bat"
-alias ls="exa"
-#  prueba
+alias ls="exa --icons --grid"
