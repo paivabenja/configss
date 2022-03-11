@@ -31,9 +31,6 @@ set noshowmode
 let g:lightline = {}
 let g:lightline.colorscheme = 'tokyonight'
 colorscheme tokyonight
-let g:onedark_termcolors=16
-let g:onedark_terminal_italics=1
-let g:onedark_terminal_bolds=1
 
 "    UTILS
 set shiftwidth=4
@@ -45,6 +42,7 @@ set clipboard=unnamedplus
 set mouse=a
 
 "    KEYBINDINGS
+
 let mapleader=" "
 map <Leader>f :NERDTreeToggle<CR>
 map <Leader>w :w<CR>
@@ -53,11 +51,11 @@ map <Leader>e :wq<CR>
 map <Leader>ñ :Bracey<CR>
 
 "    24-BIT COLOR SUPPORT FOR VIM (ONEDARK)
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
- if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
+"if (empty($TMUX))
+  "if (has("nvim"))
+    "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  "endif
+ "if (has("termguicolors"))
+    "set termguicolors
+  "endif
+"endif

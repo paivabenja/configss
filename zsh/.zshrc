@@ -31,3 +31,5 @@ alias v="nvim"
 alias l="exa --icons --grid -a"
 alias cat="bat"
 alias ls="exa --icons --grid"
+
+figlet oh-my-ssh
