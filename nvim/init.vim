@@ -9,7 +9,7 @@ call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim',
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'dracula/vim',
 Plug 'preservim/nerdtree',
 Plug 'scrooloose/nerdcommenter',
 Plug 'sheerun/vim-polyglot',
@@ -29,8 +29,8 @@ set number relativenumber
 set numberwidth=5
 set noshowmode
 let g:lightline = {}
-let g:lightline.colorscheme = 'tokyonight'
-colorscheme tokyonight
+let g:lightline.colorscheme = 'dracula'
+colorscheme dracula
 
 "    UTILS
 set shiftwidth=4
@@ -51,11 +51,11 @@ map <Leader>e :wq<CR>
 map <Leader>ñ :Bracey<CR>
 
 "    24-BIT COLOR SUPPORT FOR VIM (ONEDARK)
-"if (empty($TMUX))
-  "if (has("nvim"))
-    "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  "endif
- "if (has("termguicolors"))
-    "set termguicolors
-  "endif
-"endif
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+ if (has("termguicolors"))
+    set termguicolors
+  endif
+endif

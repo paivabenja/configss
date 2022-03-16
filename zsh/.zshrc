@@ -7,7 +7,7 @@
 
 
 #    THEME
-ZSH_THEME="obraun" # set by `omz`
+ZSH_THEME="wezm" # set by `omz`
 
 #    UPDATES
 zstyle ':omz:update' mode reminder
@@ -19,8 +19,6 @@ zstyle ':omz:update' mode reminder
 plugins=(
     git 
     sudo
-    zsh-autosuggestions
-    zsh-syntax-highlighting
 )
 
 #   IDK
@@ -32,4 +30,4 @@ alias l="exa --icons --grid -a"
 alias cat="bat"
 alias ls="exa --icons --grid"
 
-figlet oh-my-ssh
+figlet oh-my-zsh
