@@ -1,3 +1,5 @@
+
+
 "     _       _ _         _           
 "    (_)_ __ (_) |___   _(_)_ __ ___  
 "    | | '_ \| | __\ \ / / | '_ ` _ \ 
@@ -9,12 +11,13 @@ call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim',
-Plug 'dracula/vim',
+Plug 'folke/tokyonight.nvim',
 Plug 'preservim/nerdtree',
 Plug 'scrooloose/nerdcommenter',
 Plug 'sheerun/vim-polyglot',
 Plug 'ryanoasis/vim-devicons',
 Plug 'turbio/bracey.vim',
+Plug 'tribela/vim-transparent',
 
 call plug#end()
 
@@ -22,15 +25,15 @@ call plug#end()
 source ~/.config/nvim/coc-config.nvim
 
 "    VISUALS
-set cursorline
 set encoding=utf-8
 syntax on
 set number relativenumber
 set numberwidth=5
 set noshowmode
 let g:lightline = {}
-let g:lightline.colorscheme = 'dracula'
-colorscheme dracula
+let g:lightline.colorscheme = 'tokyonight'
+colorscheme tokyonight
+set background=dark
 
 "    UTILS
 set shiftwidth=4
