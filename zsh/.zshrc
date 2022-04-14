@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
@@ -16,5 +16,4 @@ alias l="exa --icons --grid -a"
 alias cat="bat"
 alias ls="exa --icons --grid"
 alias pc="sudo pacman"
-
-eval "$(starship init zsh)"
+alias qq="exit"
