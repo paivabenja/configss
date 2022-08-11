@@ -9,9 +9,14 @@
 "    PLUGINS
 call plug#begin()
 
+ Plug 'alvan/vim-closetag',
+ Plug 'tpope/vim-surround',
+ Plug 'mhinz/vim-signify',
+ Plug 'jiangmiao/auto-pairs',
+
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
- Plug 'itchyny/lightline.vim',
  Plug 'folke/tokyonight.nvim',
+ Plug 'itchyny/lightline.vim',
  Plug 'morhetz/gruvbox',
  Plug 'preservim/nerdtree',
  Plug 'scrooloose/nerdcommenter',
@@ -46,6 +51,12 @@ set autoindent
 filetype indent on
 set clipboard=unnamedplus
 set mouse=a
+set ignorecase
+set hlsearch
+set incsearch
+set smartcase
+
+let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
 "    KEYBINDINGS
 
@@ -58,13 +69,8 @@ map <Leader>q :q<CR>
 map <Leader>e :wq<CR>
 map <Leader>ñ :Bracey<CR>
 map <Leader>p :Prettier<CR>
+nnoremap <Leader>s <Plug>VSurround
 
-inoremap [ []<Esc>i
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-"inoremap < <><Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
 "    24-BIT COLOR SUPPORT FOR VIM (ONEDARK)
 if (empty($TMUX))
   if (has("nvim"))
