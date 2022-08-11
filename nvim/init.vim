@@ -9,15 +9,18 @@
 "    PLUGINS
 call plug#begin()
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'itchyny/lightline.vim',
-Plug 'folke/tokyonight.nvim',
-Plug 'preservim/nerdtree',
-Plug 'scrooloose/nerdcommenter',
-Plug 'sheerun/vim-polyglot',
-Plug 'ryanoasis/vim-devicons',
-Plug 'turbio/bracey.vim',
-Plug 'tribela/vim-transparent',
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'itchyny/lightline.vim',
+ Plug 'folke/tokyonight.nvim',
+ Plug 'morhetz/gruvbox',
+ Plug 'preservim/nerdtree',
+ Plug 'scrooloose/nerdcommenter',
+ Plug 'sheerun/vim-polyglot',
+ Plug 'ryanoasis/vim-devicons',
+ Plug 'turbio/bracey.vim',
+ Plug 'shinchu/lightline-gruvbox.vim',
+ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production', 'for': ['javascript', 'css', 'html']}
+" Plug 'tribela/vim-transparent',
 
 call plug#end()
 
@@ -31,13 +34,13 @@ set number relativenumber
 set numberwidth=5
 set noshowmode
 let g:lightline = {}
-let g:lightline.colorscheme = 'tokyonight'
-colorscheme tokyonight
+let g:lightline.colorscheme = 'gruvbox'
+colorscheme gruvbox
 set background=dark
 
 "    UTILS
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set autoindent
 filetype indent on
@@ -49,10 +52,19 @@ set mouse=a
 let mapleader=" "
 map <Leader>f :NERDTreeToggle<CR>
 map <Leader>w :w<CR>
+map <Leader>D :set background=dark<CR>
+map <Leader>L :set background=light<CR>
 map <Leader>q :q<CR>
 map <Leader>e :wq<CR>
 map <Leader>ñ :Bracey<CR>
+map <Leader>p :Prettier<CR>
 
+inoremap [ []<Esc>i
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+"inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
 "    24-BIT COLOR SUPPORT FOR VIM (ONEDARK)
 if (empty($TMUX))
   if (has("nvim"))
