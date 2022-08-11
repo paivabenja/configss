@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias v="nvim"
 alias l="exa --icons --grid -a"
-#alias cat="bat"
+alias cat="batcat"
 alias ls="exa --icons --grid"
 alias apti="sudo apt install"
 alias qq="exit"
