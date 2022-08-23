@@ -29,6 +29,8 @@ alias qq="exit"
 alias mc="sudo java -jar /home/paiva/minecraft/TLauncher-2.841.jar && exit"
 alias dc="pacmd load-module module-alsa-source source_properties=device.description=DroidCam device=hw:Loopback,1,0 && exit"
 alias vc="nvim ~/.config/nvim/"
+alias kc="nvim ~/.config/kitty"
+alias zc="nvim ~/.zshrc"
 
 # zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
