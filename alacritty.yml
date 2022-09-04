@@ -1,0 +1,68 @@
+window:
+  padding:
+    x: 10
+    y: 0
+
+font:
+  offset:
+    x: 0
+    y: 0
+  normal:
+    family: caskaydia cove Nerd Font
+  style: regular
+  size: 9.1
+
+# Space Duck
+colors:
+  #   # spaceduck: 
+  #   primary:
+  #     background: '#0f111b'
+  #     foreground: '#ecf0c1'
+  #   # Normal colors
+  #   normal:
+  #     black:   '#000000'
+  #     red:     '#e33400'
+  #     green:   '#5ccc96'
+  #     yellow:  '#b3a1e6'
+  #     blue:    '#00a3cc'
+  #     magenta: '#f2ce00'
+  #     cyan:    '#7a5ccc'
+  #     white:   '#686f9a'
+  #  
+  #   # Bright colors
+  #   bright:
+  #     black:   '#686f9a'
+  #     red:     '#e33400'
+  #     green:   '#5ccc96'
+  #     yellow:  '#b3a1e6'
+  #     blue:    '#00a3cc'
+  #     magenta: '#f2ce00'
+  #     cyan:    '#7a5ccc'
+  #     white:   '#f0f1ce'
+  # solokai: 
+  primary:
+    background: '#2c2e34'
+    foreground: '#e2e2e3'
+
+  # Normal colors
+  normal:
+    black:   '#181819'
+    red:     '#fc5d7c'
+    green:   '#9ed072'
+    yellow:  '#FFD866'
+    blue:    '#76cce0'
+    magenta: '#AB9DF2'
+    cyan:    '#78DCE8'
+    white:   '#FCFCFA'
+
+  # Bright colors
+  bright:
+    black:   '#727072'
+    red:     '#FF6188'
+    green:   '#A9DC76'
+    yellow:  '#FFD866'
+    blue:    '#FC9867'
+    magenta: '#AB9DF2'
+    cyan:    '#78DCE8'
+    white:   '#FCFCFA'
+
